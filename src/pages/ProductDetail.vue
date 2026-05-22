@@ -2,6 +2,7 @@
 import { computed } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { products } from '../data/siteData'
+import { getProductImage } from '../utils/images'
 
 const route = useRoute()
 const router = useRouter()
@@ -23,7 +24,7 @@ const goBack = () => {
         </div>
       </template>
 
-      <img :src="`/product/${product.id}.png`" :alt="product.name" class="w-full h-[320px] md:h-[420px] object-contain rounded-lg mb-6 bg-white" />
+      <img :src="getProductImage(product.id)" :alt="product.name" class="w-full h-[320px] md:h-[420px] object-contain rounded-lg mb-6 bg-white" />
       <p class="text-slate-600 leading-8 mb-5">{{ product.detail }}</p>
 
       <div class="flex flex-wrap gap-2 mb-5">

@@ -9,6 +9,7 @@ import Contact from '../pages/Contact.vue'
 
 const routes = [
   { path: '/', name: 'home', component: Home },
+  { path: '/lexin-website', name: 'website', component: Home },
   { path: '/about', name: 'about', component: About },
   { path: '/product', name: 'product', component: Product },
   { path: '/product/:id', name: 'product-detail', component: ProductDetail },

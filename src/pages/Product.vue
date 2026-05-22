@@ -1,6 +1,7 @@
 <script setup>
 import { useRouter } from 'vue-router'
 import { products } from '../data/siteData'
+import { getProductImage } from '../utils/images'
 
 const router = useRouter()
 
@@ -18,7 +19,7 @@ const openDetail = (id) => {
         :key="item.id"
         class="brand-card"
       >
-        <img :src="`/product/${item.id}.png`" :alt="item.name" class="w-full h-[220px] object-contain rounded bg-white">
+        <img :src="getProductImage(item.id)" :alt="item.name" class="w-full h-[220px] object-contain rounded bg-white">
         <div class="pt-5">
           <h3 class="text-lg font-bold mb-2 text-slate-800">{{ item.name }}</h3>
           <p class="text-slate-500 mb-4">{{ item.shortDesc }}</p>

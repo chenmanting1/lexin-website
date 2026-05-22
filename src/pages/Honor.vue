@@ -1,10 +1,9 @@
 <script setup>
 import { computed } from 'vue'
 import { certificates } from '../data/siteData'
+import { getCertImage, getCertPreviewList } from '../utils/images'
 
-const previewList = computed(() =>
-  certificates.map((item) => `/certificates/${item.image}`)
-)
+const previewList = computed(() => getCertPreviewList(certificates))
 </script>
 
 <template>
@@ -22,7 +21,7 @@ const previewList = computed(() =>
       >
         <div class="cursor-zoom-in">
           <el-image
-            :src="`/certificates/${item.image}`"
+            :src="getCertImage(item.image)"
             :preview-src-list="previewList"
             :initial-index="index"
             fit="contain"
