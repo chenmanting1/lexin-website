@@ -3,7 +3,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/lexin-website/',
+  base: '/',
   plugins: [
     vue(),
     {
@@ -32,4 +32,9 @@ export default defineConfig({
       overlay: true,
     },
   },
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    emptyOutDir: true
+  }
 })
