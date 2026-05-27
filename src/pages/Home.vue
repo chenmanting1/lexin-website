@@ -18,7 +18,7 @@ const goToProduct = () => {
   <section class="w-full h-[500px] md:h-[520px] flex flex-col items-center justify-center text-white text-center
   bg-[linear-gradient(rgba(19,71,145,.58),rgba(19,71,145,.58)),url(https://picsum.photos/1920/1080)] bg-cover bg-center">
     <h1 class="text-[58px] font-bold mb-4 md:text-[44px] max-md:text-[28px] leading-tight">专注智能硬件 · 物联网技术</h1>
-    <p class="text-xl md:text-[30px] max-md:text-[18px] mb-6">智能定位 | 无线通信 | 物联网模块 | 智慧文旅</p>
+    <p class="text-xl md:text-[30px] max-md:text-[18px] mb-6">智能定位 | 智能硬件 | 手持热成像 | DMR对讲模块 | 北斗三号短报文 | 三防手机</p>
     <el-button type="primary" size="large" class="!px-10 !h-12 !text-base" @click="goToProduct">了解更多</el-button>
   </section>
 

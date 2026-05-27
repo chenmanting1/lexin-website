@@ -27,18 +27,17 @@ export const companyProfile = {
 
 export const businessAreas = [
   '智能定位',
-  '无线通信',
-  '物联网模块',
-  '智能手持终端',
-  '智能车联网',
-  '智能穿戴',
-  '智慧文旅',
+  '智能硬件',
+  '手持热成像',
+  'DMR对讲模块',
+  '北斗三号短报文',
+  '三防手机'
 ]
 
 export const advantages = [
   { title: '快速定制', desc: '2-4 个月可交付行业定制方案，快速响应市场需求。' },
-  { title: '核心技术', desc: '北斗/GPS 多模定位、4G 全网通、DMR 数字对讲等能力成熟。' },
-  { title: '高可靠性', desc: '适配户外、工业、防爆、应急等复杂环境，稳定可用。' },
+  { title: '核心技术', desc: '红外热成像、DMR对讲、三防手机、北斗/GPS智能定位、4G/5G手机方案等行业定制产品' },
+  { title: '周全服务', desc: '研发、采购、生产、销售ODM/OEM全方位服务' },
 ]
 
 export const newsList = [
@@ -179,39 +178,6 @@ export const products = [
     ],
   },
   {
-    id: 'explosion-proof-radio',
-    name: '防爆对讲机',
-    shortDesc: '面向化工与粉尘易燃场景的防爆对讲设备。',
-    image: 'https://picsum.photos/900/600?random=38',
-    tags: ['防爆场景', '粉尘易燃', '安全通信'],
-    devCycle: '2.5个月',
-    applications: ['化工厂', '油轮货场', '加油站', '粉尘易燃场所'],
-    detail:
-      '专为燃料化学品生产运输、可燃性粉尘场所设计，满足严苛防爆标准。支持指纹解锁、手势唤醒、手套触摸、OTG 等扩展功能，保障高风险环境下的即时通信安全。',
-    specs: [
-      '认证：防爆等级认证',
-      '适用：化工、油轮、加油站、粉尘场所',
-      '扩展：指纹解锁、手势唤醒、手套触摸、OTG',
-    ],
-  },
-  {
-    id: 'high-precision-gps',
-    name: '高精度定位设备',
-    shortDesc: '融合北斗/GPS/GLONASS 多模卫星，提供亚米级/厘米级定位。',
-    image: 'https://picsum.photos/900/600?random=39',
-    tags: ['高精定位', '多模卫星', '轨迹管理'],
-    devCycle: '3个月',
-    applications: ['物流快递', '生产制造', '公共事业', '医药农牧'],
-    detail:
-      '适用于人员定位、车辆管理、资产追踪等业务，支持轨迹记录、电子围栏和异常预警，帮助客户提升运营效率与安全管理水平。',
-    specs: [
-      '卫星：北斗 + GPS + GLONASS',
-      '频率：B1(1.561GHz) / L1(1.575GHz) / L1(1.602GHz)',
-      '通道：31 Channel',
-      '灵敏度：-130dB（SNR 40dBHz）',
-    ],
-  },
-  {
     id: 'smart-pigeon-ring',
     name: '智能定位鸽环',
     shortDesc: '面向竞翔行业的 GPS 实时定位产品，支持多端协同管理。',
@@ -243,23 +209,48 @@ export const products = [
       '管理：小程序查看位置、设置紧急联系人',
       '安全：电子围栏、足迹查询与异常预警',
     ],
-  },
-  {
-    id: 'smart-scenic',
-    name: '智慧景区一体化方案',
-    shortDesc: '“智能设备 + 管理平台”一体化，提升景区服务与运营效率。',
-    image: 'https://picsum.photos/900/600?random=35',
-    tags: ['智慧文旅', '统一平台', '运营提效'],
-    devCycle: '3个月',
-    applications: ['智慧导览', '景区运营', '政府监管'],
-    detail:
-      '基于“终端设备 + 中台系统 + 应用服务”架构，覆盖游客服务、人员调度、设备管理与运营分析，助力景区数字化升级。',
-    specs: ['设备：CAT.1 通讯 + 北斗 + GPS', '平台：Java 云端部署（B/S）', '价值：服务提升、运营降本增效'],
   }
 ]
 
 
 export const certificates = [
+    // ==================== 企业资质 ×1 ====================
+  {
+    type: '国家高新技术企业',
+    name: '国家高新技术企业证书',
+    number: 'GR202444200830',
+    certNo: 'GR202444200830',
+    date: '2024-12-26',
+    owner: '深圳乐心信息技术有限公司',
+    source: '国高证书2024.jpg',
+    image: 'cert-high-tech-enterprise.jpg',
+  },
+    // ==================== 发明专利 ×1 ====================
+  {
+    type: '发明专利',
+    name: '一种基于GNSS信号非连续跟踪的导航方法',
+    number: 'ZL 2021 1 0965457.6',
+    certNo: '第6892080号',
+    date: '2024-04-12',
+    inventors: '朱青永',
+    owner: '深圳乐心信息技术有限公司',
+    publishNo: 'CN 113687392 B',
+    source: '2021109654576_发明专利证书_20240412.pdf',
+    image: 'patent-gnss-navigation.jpg',
+  },
+    // ==================== 外观设计专利 ×1 ====================
+  {
+    type: '外观设计专利',
+    name: '鸽子实时GPS定位器',
+    number: 'ZL 2022 3 0522259.8',
+    certNo: '第7711109号',
+    date: '2022-11-25',
+    inventors: '贺伟;曹远明;钟珏成',
+    owner: '深圳乐心信息技术有限公司',
+    publishNo: 'CN 307690201 S',
+    source: '16BJ1TRF4J335C92.pdf',
+    image: 'patent-pigeon-gps-design.jpg',
+  },
   // ==================== 实用新型专利 ×3 ====================
   {
     type: '实用新型专利',
@@ -296,45 +287,6 @@ export const certificates = [
     publishNo: 'CN 219831401 U',
     source: '2023-10-13-实用新型专利证书-2023209508733.pdf',
     image: 'patent-nb-beidou-mini.jpg',
-  },
-
-  // ==================== 发明专利 ×1 ====================
-  {
-    type: '发明专利',
-    name: '一种基于GNSS信号非连续跟踪的导航方法',
-    number: 'ZL 2021 1 0965457.6',
-    certNo: '第6892080号',
-    date: '2024-04-12',
-    inventors: '朱青永',
-    owner: '深圳乐心信息技术有限公司',
-    publishNo: 'CN 113687392 B',
-    source: '2021109654576_发明专利证书_20240412.pdf',
-    image: 'patent-gnss-navigation.jpg',
-  },
-
-  // ==================== 外观设计专利 ×1 ====================
-  {
-    type: '外观设计专利',
-    name: '鸽子实时GPS定位器',
-    number: 'ZL 2022 3 0522259.8',
-    certNo: '第7711109号',
-    date: '2022-11-25',
-    inventors: '贺伟;曹远明;钟珏成',
-    owner: '深圳乐心信息技术有限公司',
-    publishNo: 'CN 307690201 S',
-    source: '16BJ1TRF4J335C92.pdf',
-    image: 'patent-pigeon-gps-design.jpg',
-  },
-  // ==================== 企业资质 ×1 ====================
-  {
-    type: '国家高新技术企业',
-    name: '国家高新技术企业证书',
-    number: 'GR202444200830',
-    certNo: 'GR202444200830',
-    date: '2024-12-26',
-    owner: '深圳乐心信息技术有限公司',
-    source: '国高证书2024.jpg',
-    image: 'cert-high-tech-enterprise.jpg',
   },
   // ==================== 软件著作权 ×3 ====================
   {
