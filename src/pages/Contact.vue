@@ -32,7 +32,7 @@ const openEmail = () => { window.location.href = `mailto:${companyProfile.email}
         </div>
         <div class="px-4 py-3 bg-slate-50 rounded-lg">
           <p class="text-sm text-slate-500 mb-1">服务时间</p>
-          <p class="text-slate-800 font-semibold">周一 至 周五 09:00 - 18:00</p>
+          <p class="text-slate-800 font-semibold">周一 至 周日 00:00 - 24:00</p>
         </div>
       </div>
     </el-card>

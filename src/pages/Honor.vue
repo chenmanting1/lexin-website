@@ -2,6 +2,7 @@
 import { computed } from 'vue'
 import { certificates } from '../data/siteData'
 import { getCertImage, getCertPreviewList } from '../utils/images'
+import { Loading } from '@element-plus/icons-vue'
 
 const previewList = computed(() => getCertPreviewList(certificates))
 </script>
@@ -25,9 +26,15 @@ const previewList = computed(() => getCertPreviewList(certificates))
             :preview-src-list="previewList"
             :initial-index="index"
             fit="contain"
+            lazy
             class="w-full h-[200px] bg-slate-50 rounded"
             :preview-teleported="true"
           >
+            <template #placeholder>
+              <div class="flex items-center justify-center h-full">
+                <el-icon class="is-loading text-2xl text-slate-300"><Loading /></el-icon>
+              </div>
+            </template>
             <template #error>
               <div class="flex items-center justify-center h-full text-slate-400 text-sm">
                 暂无图片
